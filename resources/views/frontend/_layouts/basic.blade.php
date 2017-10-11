@@ -11,9 +11,7 @@
 
 @yield('meta')
 
-	{--
-		<link rel="icon" type="image/png" href="{{ asset('amadeo/images-base/logo-pancalogam.png') }}" />
-	--}
+	<link rel="icon" type="image/png" href="{{ asset('amadeo/images-base/logo-cpss-mini.png') }}" />
 	<link rel="stylesheet" type="text/css" href="{{ asset('amadeo/font/font-family.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('amadeo/css/public.css') }}">
 @yield('style')

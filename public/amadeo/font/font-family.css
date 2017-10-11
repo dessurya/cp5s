@@ -1,0 +1,30 @@
+/* Raleway */
+    @font-face {
+        font-family: 'Raleway SemiBold';
+        src: url('../font/Raleway/Raleway-SemiBold.ttf');
+    }
+    @font-face {
+        font-family: 'Raleway Bold';
+        src: url('../font/Raleway/Raleway-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Raleway ExtraBold';
+        src: url('../font/Raleway/Raleway-ExtraBold.ttf');
+    }
+    @font-face {
+        font-family: 'Raleway Thin';
+        src: url('../font/Raleway/Raleway-Thin.ttf');
+    }
+    @font-face {
+        font-family: 'Raleway Light';
+        src: url('../font/Raleway/Raleway-Light.ttf');
+    }
+    
+/* Raleway */
+
+/* Lato */
+    @font-face {
+        font-family: 'Lato Light';
+        src: url('../font/Lato/Lato-Light.ttf');
+    }
+/* Lato */

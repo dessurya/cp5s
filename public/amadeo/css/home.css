@@ -1,0 +1,105 @@
+/* about */
+	#about{
+		position: relative;
+		width: 100%;
+		padding-top: 50px;
+	}
+	#about #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+		text-align: center;
+	}
+	#about #set-wrapper h1{
+		color: rgb(38,38,38);
+		margin-bottom: 40px;
+        font-family: 'Raleway Bold';
+	}
+	#about #set-wrapper p{
+		color: rgb(38,38,38);
+		margin: 5px auto;
+        font-family: 'Lato Light';
+	}
+	#about #set-wrapper .text-center{
+		margin-top: 40px;
+	}
+/* about */
+
+/* pressure */
+	#pressure{
+		position: relative;
+		width: 100%;
+		height: 140vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	#pressure #descrip{
+		position: absolute;
+		top: 25vh;
+		left: 10%;
+		width: 30%;
+	}
+	#pressure #descrip h1{
+		margin: 0;
+		color: rgb(237,28,36);
+        font-family: 'Raleway Bold';
+	}
+	#pressure #descrip p{
+		color: rgb(61,61,61);
+		margin-bottom: 30px;
+		line-height: 1.41;
+        font-family: 'Lato Light';
+	}
+	#pressure #quotes{
+		position: absolute;
+		bottom: 30vh;
+		width: 100%;
+		text-align: center;
+	}
+	#pressure #quotes h1{
+		margin: 0;
+		color: white;
+        font-family: 'Raleway Thin';
+	}
+/* pressure */
+
+/* product */
+	#product{
+		position: relative;
+		width: 100%;
+	}
+	#product #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 80%;
+		padding-top: 40px;
+	}
+	#product #set-wrapper #title{
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	#product #set-wrapper #title h1{
+		margin: 0;
+		color: rgb(38,38,38);
+        font-family: 'Raleway Bold';
+	}
+	#product #set-wrapper #title p{
+		color: rgb(74,74,74);
+        font-family: 'Raleway Light';
+	}
+	#product #set-wrapper .text-center{
+		margin: 20px auto;
+	}
+	#product #set-wrapper .text-center a{
+		background-color: rgb(11,13,59);
+		color: white;
+		padding: 5px 25px;
+		text-decoration: none;
+		transition: all .56s;
+        font-family: 'Raleway SemiBold';
+	}
+	#product #set-wrapper .text-center a:hover{
+		background-color: rgba(11,13,59,.6);
+	}
+/* product */

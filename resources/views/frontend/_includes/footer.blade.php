@@ -1,4 +1,5 @@
 <div id="footer">
+	<img id="top" src="{{ asset('amadeo/images-base/footer-a.png') }}">
 	<div id="set-wrapper">
 		<div id="content">
 			<div id="logo" class="bar">
@@ -7,8 +8,12 @@
 			<div id="detail" class="bar">
 				<div id="find-us">
 					<h3>Find Us</h3>
-					<img src="{{ asset('amadeo/images-base/logo-fb-putih.png') }}">
-					<img src="{{ asset('amadeo/images-base/logo-gplus-putih.png') }}">
+					<a href="">
+						<img src="{{ asset('amadeo/images-base/icon-fb-putih.png') }}">
+					</a>
+					<a href="">
+						<img src="{{ asset('amadeo/images-base/icon-gplus-putih.png') }}">
+					</a>
 				</div>
 				<div id="contact">
 					<h3>Contact</h3>
@@ -23,7 +28,7 @@
 		</div>
 		<div id="copyright">
 			<label>© Copyright 2017 All Rights Reserved</label>
-			<label>Development By <img src="{{ asset('amadeo/images-base/logo-amadeo.png') }}"></label>
+			<label>Development By <a href="http://amadeo.id/"><img src="{{ asset('amadeo/images-base/logo-amadeo.png') }}"></a></label>
 		</div>
 	</div>
 </div>

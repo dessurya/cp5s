@@ -1,0 +1,56 @@
+/* product */
+	/* list */
+		#product #set-wrapper #list{
+			position: relative;
+			margin-top: 80px;
+			margin-bottom: 40px;
+		}
+		#product #set-wrapper #list .rows{
+			position: relative;
+		}
+		#product #set-wrapper #list .rows .bar{
+			margin: 0 .5%;
+			display: inline-grid;
+			width: 23%;
+		}
+		#product #set-wrapper #list .rows .bar #spacing{
+			padding: 0 10px;
+		}
+		#product #set-wrapper #list .rows .bar #spacing #show{
+			margin: 0 auto;
+			transform: rotate(45deg);
+			border: solid 5px rgb(11,13,59);
+			overflow: hidden;
+			width: 175px;
+			height: 175px;
+		}
+		#product #set-wrapper #list .rows .bar #spacing #show #img{
+			position: relative;
+			transform: rotate(-45deg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 60%;
+			top: -40px;
+		    left: -38px;
+			width: 250px;
+			height: 250px;
+		}
+		#product #set-wrapper #list .rows .bar #spacing #show #img #descrip{
+			width: 250px;
+			height: 250px;
+			display: table-cell;
+			vertical-align: middle;
+			background-color: rgba(0,0,0,.6);
+		}
+		#product #set-wrapper #list .rows .bar a #spacing #show #img #descrip h1{
+			text-align: center;
+			width: 80%;
+			margin: 0 auto;
+			color: rgb(237,28,36);
+	        font-family: 'Raleway Bold';
+		}
+		#product #set-wrapper #list .rows .bar a{
+			text-decoration: none;
+		}
+	/* list */
+/* product */

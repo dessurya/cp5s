@@ -1,0 +1,142 @@
+/* about */
+	#contacts{
+		margin-top: 168.5px;
+		position: relative;
+		width: 100%;
+		background-color: rgb(235,234,234);
+		padding-top: 50px;
+		padding-bottom: 20px;
+		margin-bottom: 220px;
+	}
+	#contacts #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 80%;
+	}
+	#contacts #set-wrapper h1{
+		text-align: center;
+		color: rgb(38,38,38);
+		margin-bottom: 40px;
+        font-family: 'Raleway Bold';
+	}
+	#contacts #set-wrapper #maps{
+		height: 65vh;
+	}
+	#contacts #set-wrapper #maps iframe{
+		width: 100%;
+		height: 100%;
+	}
+	#contacts #set-wrapper #contect-wrapper{
+		position: relative;
+		margin-top: 60px;
+	}
+	#contacts #set-wrapper #contect-wrapper .bar{
+		float: left;
+	}
+	#contacts #set-wrapper #contect-wrapper .bar h2{
+		color: rgb(237,28,36);
+		margin: 0;
+		margin-bottom: 10px;
+        font-family: 'Raleway Bold';
+	}
+	/* descript */
+		#contacts #set-wrapper #contect-wrapper #descrip.bar{
+			width: 30%;
+		}
+		#contacts #set-wrapper #contect-wrapper #descrip.bar .rows{
+			display: table;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		#contacts #set-wrapper #contect-wrapper #descrip.bar .rows .cell{
+			display: table-cell;
+			vertical-align: middle;
+			height: 40px;
+			padding: 0 10px;
+		}
+		#contacts #set-wrapper #contect-wrapper #descrip.bar .rows .cell:nth-child(odd){
+			width: 15%;
+			text-align: center;
+		}
+		#contacts #set-wrapper #contect-wrapper #descrip.bar .rows .cell:nth-child(even){
+			width: 85%;
+		}
+		#contacts #set-wrapper #contect-wrapper #descrip.bar .rows .cell img{
+			width: 30px;
+		}
+		#contacts #set-wrapper #contect-wrapper #descrip.bar .rows .cell p{
+			margin: 0;
+			color: rgb(61,61,61);
+	        font-family: 'Lato Light';
+		}
+	/* descript */
+	/* information */
+		#contacts #set-wrapper #contect-wrapper #information.bar{
+			margin-left: 10%;
+			width: 60%;
+		}
+		#contacts #set-wrapper #contect-wrapper #information.bar form .float{
+			float: left;
+			width: 45%;
+		}
+		#contacts #set-wrapper #contect-wrapper #information.bar form .float.margin{
+			margin-right: 7.5%;
+		}
+		#contacts #set-wrapper #contect-wrapper #information.bar form .g-recaptcha{
+			float: left;
+		}
+		#contacts #set-wrapper #contect-wrapper #information.bar form button#submit{
+			float: right;
+			margin-top: 0px;
+			margin-right: 60px;
+			padding: 5px 40px;
+			background-color: rgb(11,13,59);
+			border: none;
+			border-radius: 0;
+			color: white;
+			cursor: pointer;
+			transition: all .56s;
+	        font-family: 'Raleway SemiBold';
+		}
+		#contacts #set-wrapper #contect-wrapper #information.bar form button#submit:hover{
+			background-color: rgba(11,13,59,.6);
+		}
+	/* information */
+	/* form */
+		form.form-style input,
+		form.form-style textarea{
+			display: block;
+			width: 96%;
+			margin-bottom: 15px;
+			padding: 8px;
+		    font-size: 14px;
+		    line-height: 1.42857143;
+		    background-image: none;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    border-color: rgb(58,58,58);
+			background-color: rgb(235,234,234);
+			outline: none;
+		}
+		form.form-style span{
+			color: red;
+		}
+		.alert{
+			padding: 15px;
+			padding-right: 35px;
+			margin-bottom: 20px;
+			border: 1px solid transparent;
+			border-radius: 4px;
+		}
+		.alert-danger{
+			color: #a94442;
+			background-color: #f2dede;
+			border-color: #ebccd1;
+		}
+		.alert-success{
+			color: #3c763d;
+			background-color: #dff0d8;
+			border-color: #d6e9c6;
+		}
+	/* form */
+/* about */

@@ -1,0 +1,28 @@
+/* about */
+	#about{
+		position: relative;
+		width: 100%;
+		background-color: rgb(235,234,234);
+		padding-top: 50px;
+		padding-bottom: 20px;
+		margin-bottom: 220px;
+	}
+	#about #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 65%;
+		text-align: center;
+	}
+	#about #set-wrapper h1{
+		color: rgb(38,38,38);
+		margin-bottom: 40px;
+        font-family: 'Raleway Bold';
+	}
+	#about #set-wrapper p{
+		color: rgb(38,38,38);
+		margin: 5px auto;
+		margin-bottom: 15px;
+		line-height: 1.41;
+        font-family: 'Lato Light';
+	}
+/* about */

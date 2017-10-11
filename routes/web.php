@@ -11,6 +11,33 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home-page.index');
-});
+// frontend
+	
+	// home
+		Route::get('/', 'Frontend\FrontendController@home')
+			->name('frontend.home');
+	// home
+
+	// about
+		Route::get('/about', 'Frontend\FrontendController@about')
+			->name('frontend.about');
+	// about
+
+	// product
+		Route::get('/product', 'Frontend\FrontendController@product')
+			->name('frontend.product');
+		Route::get('/product/{slug}', 'Frontend\FrontendController@productIndex')
+			->name('frontend.product.index');
+		Route::get('/product/{slug}/{subslug}', 'Frontend\FrontendController@productView')
+			->name('frontend.product.view');
+	// product
+
+	// contact
+		Route::get('/contact', 'Frontend\FrontendController@contact')
+			->name('frontend.contact');
+		Route::post('/contact/store', 'Frontend\FrontendController@contactStore')
+			->name('frontend.contact.store');
+
+	// contact
+
+// frontend

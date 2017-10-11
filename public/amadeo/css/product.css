@@ -1,0 +1,27 @@
+/* product */
+	#product{
+		position: relative;
+		width: 100%;
+		background-color: rgb(235,234,234);
+		padding-top: 50px;
+		padding-bottom: 20px;
+		margin-bottom: 220px;
+	}
+	#product #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+	}
+	#product #set-wrapper h1{
+		color: rgb(38,38,38);
+		margin-bottom: 40px;
+        font-family: 'Raleway Bold';
+	}
+	#product #set-wrapper p{
+		color: rgb(38,38,38);
+		margin: 5px auto;
+		margin-bottom: 15px;
+        font-family: 'Lato Light';
+	}
+/* product */
