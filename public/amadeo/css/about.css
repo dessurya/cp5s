@@ -25,6 +25,17 @@
 		line-height: 1.41;
         font-family: 'Lato Light';
 	}
+	#about #set-wrapper ul li{
+		float: left;
+		width: 50%;
+		text-align: left;
+		margin-bottom: 5px;
+	}
+	#about #set-wrapper ul li label{
+        font-family: 'Lato Light';
+		color: rgb(38,38,38);
+		text-transform: uppercase;
+	}
 	/* mobile */
 		@media (max-width: 480px) {
 			#about{

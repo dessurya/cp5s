@@ -19,6 +19,10 @@
 		width: 175px;
 		height: 175px;
 		overflow: hidden;
+		transition: all .56s;
+	}
+	#product-index-list .bar #spacing:hover #show{
+		transform: rotate(-45deg);
 	}
 	#product-index-list .bar #spacing #show #img{
 		position: relative;
@@ -29,7 +33,11 @@
 		transform: rotate(-45deg);
 		background-size: 60%;
 		background-position: center;
-		background-repeat: no-repeat;	
+		background-repeat: no-repeat;
+		transition: all .56s;
+	}
+	#product-index-list .bar #spacing:hover #show #img{
+		transform: rotate(405deg);
 	}
 	#product-index-list .bar #spacing #descrip{
 		text-align: center;

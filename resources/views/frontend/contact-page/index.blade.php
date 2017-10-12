@@ -86,7 +86,7 @@
 				        	<input 
 								type="text" 
 								name="telpon"
-								placeholder="Telepon"
+								placeholder="Phone"
 								onkeypress="return isNumber(event)"
 								value="{{ old('telpon') }}"
 							>
@@ -118,7 +118,7 @@
 						@endif
 						<textarea 
 							name="pesan" 
-							placeholder="Pesan"
+							placeholder="Message"
 							rows="2" 
 						>{{ old('pesan') }}</textarea>
 						<div class="submit-wrapper">
