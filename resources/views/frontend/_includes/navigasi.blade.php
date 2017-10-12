@@ -38,6 +38,11 @@
 			<div id="name" class="bar">
 				<div id="setup">
 					<img src="{{ asset('amadeo/images-base/logo-cpss.png') }}">
+					<div id="burger-icon">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
 				</div>
 			</div>
 			<div id="phone" class="bar">

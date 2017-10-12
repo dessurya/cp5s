@@ -1,3 +1,14 @@
+/* mobile banner */
+	@media (max-width: 480px) {
+		#banner{
+			height: 45vh;
+		}
+		#banner #descrip{
+			top: 20vh;
+		}
+	}
+/* mobile banner */
+
 /* about */
 	#about{
 		position: relative;
@@ -62,6 +73,26 @@
 		color: white;
         font-family: 'Raleway Thin';
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#pressure #descrip{
+				left: 5%;
+				right: 5%;
+				width: 85%;
+				padding: 2.5%;
+				background-color: rgba(235,235,235,.9);
+			}
+			#pressure #descrip a.btn-gray{
+				position: relative;
+				bottom: 10px;
+			}
+			#pressure #quotes h1{
+				font-size: 24px;
+				width: 85%;
+				margin: 0 auto;
+			}
+		}
+	/* mobile */
 /* pressure */
 
 /* product */

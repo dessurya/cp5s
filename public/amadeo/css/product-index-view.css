@@ -33,4 +33,16 @@
 		line-height: 1.41;
         font-family: 'Lato Light';
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#product{
+				padding-top: 50px; 
+			}
+			#product #set-wrapper #img.bar,
+			#product #set-wrapper #descrip.bar{
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+	/* mobile */
 /* product */

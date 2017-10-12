@@ -16,8 +16,8 @@ var initNavbar = 168;
 
 // for mobile
 if(win.width() < 512){
-	// $('#navigasi #content .wrapper #logo.bar #burger').click(function(){
-	// 	$('#navigasi').toggleClass("aktif");;
-	// });
+	$('#navigasi #detail.wrapper #name.bar #burger-icon').click(function(){
+		$('#navigasi').toggleClass("aktif");;
+	});
 }
 // for mobile

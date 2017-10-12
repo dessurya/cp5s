@@ -25,4 +25,12 @@
 		line-height: 1.41;
         font-family: 'Lato Light';
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#about{
+				padding-top: 15px;
+				margin-bottom: 75px;
+			}
+		}
+	/* mobile */
 /* about */

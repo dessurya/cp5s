@@ -24,4 +24,11 @@
 		margin-bottom: 15px;
         font-family: 'Lato Light';
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#product{
+				margin-bottom: 75px;
+			}
+		}
+	/* mobile */
 /* product */

@@ -21,6 +21,13 @@
 	.text-center{
 		text-align: center;
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			body{
+				overflow-x: hidden;
+			}
+		}
+	/* mobile */
 /* public */
 
 /* navigasi */
@@ -193,6 +200,115 @@
 			height: 25px;
 		}
 	/* list */
+	/* mobile */
+		@media (max-width: 480px) {
+			/* sosmed */
+				#navigasi #sosmed.wrapper{
+					display: none;
+				}
+				#navigasi #sosmed.wrapper,
+				#navigasi #sosmed.wrapper #set-wrapper,
+				#navigasi #sosmed.wrapper #in-scroll,
+				#navigasi #sosmed.wrapper label{
+					visibility: hidden;
+					opacity: 0;
+					height: 0;
+				}
+			/* sosmed */
+			/* detail */
+				#navigasi #detail.wrapper .bar #setup{
+					height: 0px;
+					padding-top: 0;
+				}
+				#navigasi #detail.wrapper #name.bar{
+					width: 100%;
+				}
+				#navigasi #detail.wrapper #name.bar img{
+					width: 85%;
+					height: auto;
+				}
+				#navigasi #detail.wrapper #name.bar #burger-icon{
+					position: absolute;
+					border: .5px solid rgb(237,28,36);
+					border-radius: 4px;
+					padding: 2.5px;
+					right: 10px;
+					top: 15px;
+					cursor: pointer;
+				}
+				#navigasi #detail.wrapper #name.bar #burger-icon div{
+					width: 26px;
+					height: 3px;
+					margin: 3px 0;
+					background-color: rgba(237,28,36,.6);
+					border-radius: 5px;
+				}
+				#navigasi #detail.wrapper #name.bar #setup{
+					border: none;
+					height: 50px;
+				}
+				#navigasi #detail.wrapper #phone.bar,
+				#navigasi #detail.wrapper #location.bar,
+				#navigasi #detail.wrapper #clock.bar{
+					width: 33.33%;
+				}
+				#navigasi #detail.wrapper #phone.bar img,
+				#navigasi #detail.wrapper #location.bar img,
+				#navigasi #detail.wrapper #clock.bar img{
+					height: 20px;
+					visibility: hidden;
+				}
+				#navigasi #detail.wrapper #phone.bar p,
+				#navigasi #detail.wrapper #location.bar p,
+				#navigasi #detail.wrapper #clock.bar p{
+					font-size: 12px;
+					visibility: hidden;
+				}
+			/* detail */
+			/* list */
+				#navigasi #list.wrapper .bar-L,
+				#navigasi #list.wrapper .bar-L #container{
+					width: 100%;
+					padding-left: 0;
+					padding-right: 0;
+					height: 0;
+				}
+				#navigasi #list.wrapper .bar-R:nth-child(odd){
+					width: 20%
+				}
+				#navigasi #list.wrapper .bar-R:nth-child(even){
+					width: 80%
+				}
+				#navigasi #list.wrapper .bar-R input{
+					width: 100%;
+					padding: 0;
+				}
+				#navigasi #list.wrapper .bar-R button{
+					width: 100%;
+				}
+			/* list */
+			/* aktif */
+				#navigasi.aktif #detail.wrapper .bar #setup{
+					height: 110px;
+				}
+				#navigasi.aktif #detail.wrapper #name.bar #setup{
+					height: 65px;
+				}
+				#navigasi.aktif #detail.wrapper #phone.bar img,
+				#navigasi.aktif #detail.wrapper #location.bar img,
+				#navigasi.aktif #detail.wrapper #clock.bar img,
+				#navigasi.aktif #detail.wrapper #phone.bar p,
+				#navigasi.aktif #detail.wrapper #location.bar p,
+				#navigasi.aktif #detail.wrapper #clock.bar p{
+					visibility: visible;
+				}
+				#navigasi.aktif #list.wrapper .bar-L, 
+				#navigasi.aktif #list.wrapper .bar-L #container{
+					height: auto;
+				}
+			/* aktif */
+		}
+	/* mobile */
 /* navigasi */
 
 /* footer */
@@ -272,6 +388,34 @@
 	    margin-left: 5px;
 	    bottom: 3px;
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#footer img#top{
+				top: -17.5px;
+			}
+			#footer #set-wrapper #content{
+				margin-bottom: 20px;
+			}
+			#footer #set-wrapper #content .bar{
+				width: 100%;
+				margin: 10px auto;
+			}
+			#footer #set-wrapper #content #logo.bar img{
+				width: 100%;
+				height: auto;
+			}
+			#footer #set-wrapper #copyright label{
+				display: block;
+				text-align: center;
+				border: none;
+			}
+			#footer #set-wrapper #copyright label img{
+				position: relative;
+				display: block;
+				margin: 10px auto 0;
+			}
+		}
+	/* mobile */
 /* footer */
 
 /* banner */
@@ -319,4 +463,25 @@
 		bottom: -125px;
 		width: 100%;
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#banner{
+				margin-top: 0;
+			}
+			#banner #descrip{
+				left: 5%;
+				right: 5%;
+			}
+			#banner #descrip h1{
+				text-align: right;
+				font-size: 18px;
+			}
+			#banner #descrip h3{
+				font-size: 12px;
+			}
+			.after-banner img#botom{
+				bottom: -30px;
+			}
+		}
+	/* mobile */
 /* banner */

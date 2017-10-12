@@ -47,4 +47,11 @@
 	#product-index-list .bar a{
 		text-decoration: none;
 	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#product-index-list .bar{
+				width: 100%;
+			}
+		}
+	/* mobile */
 /* product */

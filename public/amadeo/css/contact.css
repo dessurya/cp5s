@@ -139,4 +139,21 @@
 			border-color: #d6e9c6;
 		}
 	/* form */
+	/* mobile */
+		@media (max-width: 480px) {
+			#contacts{
+				margin-top: 90px;
+				margin-bottom: 75px;
+			}
+			#contacts #set-wrapper #contect-wrapper #descrip.bar,
+			#contacts #set-wrapper #contect-wrapper #information.bar{
+				width: 100%;
+				margin: 0 auto;
+			}
+			#contacts #set-wrapper #contect-wrapper #information.bar form button#submit{
+				margin-right: 0;
+				margin-top: 20px;
+			}
+		}
+	/* mobile */
 /* about */
