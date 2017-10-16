@@ -168,19 +168,19 @@ class FrontendController extends Controller
 		}
 		function contactStore(Request $request){
 			$message = [
-				'name.required' 	=> 'dibutuhkan',
-				'name.min' 		=> 'terlalu pendek',
-				'email.required'  => 'dibutuhkan',
+				'name.required' 	=> 'required',
+				'name.min' 		=> 'to short',
+				'email.required'  => 'required',
 				'email.email'  	=> 'format email salah',
-				'telpon.required'	=> 'dibutuhkan',
-				'telpon.min' 		=> 'terlalu pendek',
-				'telpon.max' 		=> 'terlalu panjang',
-				'subject.required'=> 'dibutuhkan',
-				'subject.min' 	=> 'terlalu pendek',
-				'pesan.required'	=> 'dibutuhkan',
-				'pesan.min' 		=> 'terlalu pendek',
-				'pesan.max' 		=> 'terlalu panjang',
-				'g-recaptcha-response.required'  => 'dibutuhkan',
+				'telpon.required'	=> 'required',
+				'telpon.min' 		=> 'to short',
+				'telpon.max' 		=> 'to long',
+				'subject.required'=> 'required',
+				'subject.min' 	=> 'to short',
+				'pesan.required'	=> 'required',
+				'pesan.min' 		=> 'to short',
+				'pesan.max' 		=> 'to long',
+				'g-recaptcha-response.required'  => 'required',
 		    ];
 
 		    $validator = Validator::make($request->all(), [

@@ -8,8 +8,7 @@
 				</label>
 				<label>
 					<img src="{{ asset('amadeo/images-base/icon-phone.png') }}">
-					021 5417203,  
-					021 5417203
+					(021) 6121011, 2268 2973, 2268 0133
 				</label>
 				<label>
 					<img src="{{ asset('amadeo/images-base/icon-location.png') }}">
@@ -48,8 +47,9 @@
 			<div id="phone" class="bar">
 				<div id="setup">
 					<img src="{{ asset('amadeo/images-base/icon-phone.png') }}">
-					<p>021 5417203</p>
-					<p>021 5417203</p>
+					<p>(021) 6121011</p>
+					<p>2268 2973</p>
+					<p>2268 0133</p>
 				</div>
 			</div>
 			<div id="location" class="bar">

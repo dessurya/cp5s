@@ -36,17 +36,44 @@
 		</div>
 	</div>
 
-	<div id="pressure" style="background-image: url('{{ asset('amadeo/images-base/pressure-bg.png') }}');">
-		<div id="descrip">
-			<h1>Pressure Gauge</h1>
-			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-			</p>
-			<a href="" class="btn-gray">Detail</a>
+	<div id="show-top">
+		<img id="top" src="{{ asset('amadeo/images-base/home-show-top.png') }}">
+		<div id="set-wrapper">
+			<div id="img">
+				<img src="{{ asset('amadeo/images-base/home-show-top-img.png') }}">
+			</div>
+			<div id="descrip">
+				<h1>Spindo</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				</p>
+				<a href="" class="btn-gray">Detail</a>
+			</div>
+			<div class="clearfix"></div>
 		</div>
-		<div id="quotes">
+	</div>
+
+	<div id="quotes" style="background-image: url('{{ asset('amadeo/images-base/home-quotes.png') }}');">
+		<div id="set-wrapper">
 			<h1>Spend Your Business Using High Quality Pipes</h1>
 		</div>
+	</div>
+
+	<div id="show-bottom">
+		<div id="set-wrapper">
+			<div id="img">
+				<img src="{{ asset('amadeo/images-base/home-show-bottom-img.png') }}">
+			</div>
+			<div id="descrip">
+				<h1>Flange</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				</p>
+				<a href="" class="btn-gray">Detail</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<img id="bottom" src="{{ asset('amadeo/images-base/home-show-bottom.png') }}">
 	</div>
 
 	<div id="product">

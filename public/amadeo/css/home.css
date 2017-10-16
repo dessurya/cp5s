@@ -36,64 +36,192 @@
 	}
 /* about */
 
-/* pressure */
-	#pressure{
+/* show top */
+	#show-top{
 		position: relative;
 		width: 100%;
-		height: 140vh;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+		background-color: rgb(217,217,217);
+		margin-top: 100px;
+		padding-bottom: 10px;
 	}
-	#pressure #descrip{
+	#show-top img#top{
 		position: absolute;
-		top: 25vh;
-		left: 10%;
-		width: 30%;
+		width: 100%;
+		top: -105px;
 	}
-	#pressure #descrip h1{
+	#show-top #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+	}
+	#show-top #set-wrapper #img{
+		float: left;
+		width: 55%;
+	}
+	#show-top #set-wrapper #img img{
+		width: 100%;
+		height: auto;
+	}
+	#show-top #set-wrapper #descrip{
+		position: relative;
+		float: right;
+		width: 40%;
+		margin-left: 5%;
+		margin-top: 15vh;
+	}
+	#show-top #set-wrapper #descrip h1{
 		margin: 0;
 		color: rgb(237,28,36);
         font-family: 'Raleway Bold';
 	}
-	#pressure #descrip p{
+	#show-top #set-wrapper #descrip p{
 		color: rgb(61,61,61);
 		margin-bottom: 30px;
 		line-height: 1.41;
         font-family: 'Lato Light';
 	}
-	#pressure #quotes{
-		position: absolute;
-		bottom: 30vh;
+	/* mobile */
+		@media (max-width: 480px) {
+			#show-top{
+				margin-top: 35px;
+			}
+			#show-top img#top{
+				top: -25px;
+			}
+			#show-top #set-wrapper #img{
+				float: none;
+				position: absolute;
+				top: 40px;
+				left: 5%;
+				right: 5%;
+				width: 90%;
+			}
+			#show-top #set-wrapper #descrip{
+				margin: 20px 2.5%;
+				width: 90%;
+				padding: 2.5%;
+				background-color: rgba(235,235,235,.75);
+				z-index: 1;
+			}
+			#show-top #set-wrapper a.btn-gray{
+				position: relative;
+				bottom: 10px;
+			}
+		}
+	/* mobile */
+/* show top */
+
+/* quotes */
+	#quotes{
+		position: relative;
 		width: 100%;
+		height: 70vh;
+		margin-top: -35px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+	}
+	#quotes #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
 		text-align: center;
 	}
-	#pressure #quotes h1{
+	#quotes #set-wrapper h1{
 		margin: 0;
+		padding-top: 34.5vh;
 		color: white;
         font-family: 'Raleway Thin';
 	}
 	/* mobile */
 		@media (max-width: 480px) {
-			#pressure #descrip{
-				left: 5%;
-				right: 5%;
-				width: 85%;
-				padding: 2.5%;
-				background-color: rgba(235,235,235,.9);
+			#quotes{
+				height: 20vh;
+				margin-top: -15px;
 			}
-			#pressure #descrip a.btn-gray{
-				position: relative;
-				bottom: 10px;
-			}
-			#pressure #quotes h1{
+			#quotes #set-wrapper h1{
+				padding-top: 30px;
 				font-size: 24px;
-				width: 85%;
-				margin: 0 auto;
 			}
 		}
 	/* mobile */
-/* pressure */
+/* quotes */
+
+/* show bottom */
+	#show-bottom{
+		position: relative;
+		width: 100%;
+		background-color: rgb(217,217,217);
+		margin-top: -20px;
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+	#show-bottom img#bottom{
+		position: absolute;
+		width: 100%;
+		bottom: -50px;
+	}
+	#show-bottom #set-wrapper{
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+	}
+	#show-bottom #set-wrapper #descrip{
+		position: relative;
+		float: left;
+		width: 40%;
+		margin-left: 5%;
+		margin-top: 15vh;
+	}
+	#show-bottom #set-wrapper #descrip h1{
+		margin: 0;
+		color: rgb(237,28,36);
+        font-family: 'Raleway Bold';
+	}
+	#show-bottom #set-wrapper #descrip p{
+		color: rgb(61,61,61);
+		margin-bottom: 30px;
+		line-height: 1.41;
+        font-family: 'Lato Light';
+	}
+	#show-bottom #set-wrapper #img{
+		float: right;
+		width: 55%;
+	}
+	#show-bottom #set-wrapper #img img{
+		width: 100%;
+		height: auto;
+	}
+	/* mobile */
+		@media (max-width: 480px) {
+			#show-top{
+				margin-top: 35px;
+			}
+			#show-bottom img#bottom{
+				bottom: -10px;
+			}
+			#show-bottom #set-wrapper #img{
+				float: none;
+				position: absolute;
+				top: 40px;
+				left: 5%;
+				right: 5%;
+				width: 90%;
+			}
+			#show-bottom #set-wrapper #descrip{
+				margin: 20px 2.5%;
+				width: 90%;
+				padding: 2.5%;
+				background-color: rgba(235,235,235,.75);
+				z-index: 1;
+			}
+			#show-bottom #set-wrapper a.btn-gray{
+				position: relative;
+				bottom: 10px;
+			}
+		}
+	/* mobile */
+/* show bottom */
 
 /* product */
 	#product{
