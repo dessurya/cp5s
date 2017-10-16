@@ -34,10 +34,10 @@
 				<a href="{{ route('frontend.about') }}" class="btn-gray">Detail</a>
 			</div>
 		</div>
+		<img id="bottom" src="{{ asset('amadeo/images-base/home-show-top.png') }}">
 	</div>
 
 	<div id="show-top">
-		<img id="top" src="{{ asset('amadeo/images-base/home-show-top.png') }}">
 		<div id="set-wrapper">
 			<div id="img">
 				<img src="{{ asset('amadeo/images-base/home-show-top-img.png') }}">

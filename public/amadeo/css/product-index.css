@@ -24,9 +24,6 @@
 		height: 150px;
 		transition: all .56s;
 	}
-	#product #set-wrapper #list .rows .bar #spacing:hover #show{
-		transform: rotate(-45deg);
-	}
 	#product #set-wrapper #list .rows .bar #spacing #show #img{
 		position: relative;
 		transform: rotate(-45deg);
@@ -40,7 +37,7 @@
 		transition: all .56s;
 	}
 	#product #set-wrapper #list .rows .bar #spacing:hover #show #img{
-		transform: rotate(405deg);
+		background-size: 65%;
 	}
 	#product #set-wrapper #list .rows .bar #spacing #show #img #descrip{
 		width: 250px;
