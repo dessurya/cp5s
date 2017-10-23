@@ -40,15 +40,20 @@
 		background-size: 65%;
 	}
 	#product #set-wrapper #list .rows .bar #spacing #show #img #descrip{
-		width: 250px;
-		height: 250px;
+		width: 225px;
+		height: 225px;
 		display: table-cell;
 		vertical-align: middle;
 		background-color: rgba(0,0,0,.6);
 	}
 	#product #set-wrapper #list .rows .bar a #spacing #show #img #descrip h1{
 		text-align: center;
-		width: 80%;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 185px;
+		height: 74px;
+		display: table-cell;
+		vertical-align: middle;
 		margin: 0 auto;
 		color: rgb(237,28,36);
         font-family: 'Raleway Bold';

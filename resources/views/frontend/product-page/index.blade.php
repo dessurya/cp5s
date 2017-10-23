@@ -33,21 +33,21 @@
 			
 			<div id="list">
 				<div class="rows">
-					@for($a=0; $a<=6; $a++)
+					@foreach($CategoryProduk as $list)
 					<div class="bar">
-						<a href="{{ route('frontend.product.index', ['slug'=>'slug-'.$a]) }}">
+						<a href="{{ route('frontend.product.index', ['slug'=>$list->slug]) }}">
 							<div id="spacing">
 								<div id="show">
-									<div id="img" style="background-image: url('{{ asset('amadeo/images-base/lain/3cce7076-95d9-4928-a7eb-a3ce01100bb7_800x663.jpg') }}');">
+									<div id="img" style="background-image: url('{{ asset('amadeo/images-base/'.$list->img_category) }}');">
 										<div id="descrip">
-											<h1>Name Of Product</h1>
+											<h1>{{ $list->nama }}</h1>
 										</div>
 									</div>
 								</div>
 							</div>
 						</a>
 					</div>
-					@endfor
+					@endforeach
 					<div class="clearfix"></div>
 				</div>
 			</div>

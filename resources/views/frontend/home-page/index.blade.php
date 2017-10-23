@@ -37,21 +37,23 @@
 		<img id="bottom" src="{{ asset('amadeo/images-base/home-show-top.png') }}">
 	</div>
 
+	@if(isset($CategoryProduk[0]))
 	<div id="show-top">
 		<div id="set-wrapper">
 			<div id="img">
-				<img src="{{ asset('amadeo/images-base/home-show-top-img.png') }}">
+				<img src="{{ asset('amadeo/images-base/'.$CategoryProduk[0]->img_category) }}">
 			</div>
 			<div id="descrip">
-				<h1>Spindo</h1>
+				<h1>{{ $CategoryProduk[0]->nama }}</h1>
 				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					{{ $CategoryProduk[0]->description }}
 				</p>
-				<a href="" class="btn-gray">Detail</a>
+				<a href="{{ route('frontend.product.index', ['slug'=>$CategoryProduk[0]->slug]) }}" class="btn-gray">Detail</a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
+	@endif
 
 	<div id="quotes" style="background-image: url('{{ asset('amadeo/images-base/home-quotes.png') }}');">
 		<div id="set-wrapper">
@@ -59,22 +61,24 @@
 		</div>
 	</div>
 
+	@if(isset($CategoryProduk[1]))
 	<div id="show-bottom">
 		<div id="set-wrapper">
 			<div id="img">
-				<img src="{{ asset('amadeo/images-base/home-show-bottom-img.png') }}">
+				<img src="{{ asset('amadeo/images-base/'.$CategoryProduk[1]->img_category) }}">
 			</div>
 			<div id="descrip">
-				<h1>Flange</h1>
+				<h1>{{ $CategoryProduk[1]->nama }}</h1>
 				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					{{ $CategoryProduk[1]->description }}
 				</p>
-				<a href="" class="btn-gray">Detail</a>
+				<a href="{{ route('frontend.product.index', ['slug'=>$CategoryProduk[1]->slug]) }}" class="btn-gray">Detail</a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<img id="bottom" src="{{ asset('amadeo/images-base/home-show-bottom.png') }}">
 	</div>
+	@endif
 
 	<div id="product">
 		<div id="set-wrapper">
@@ -83,23 +87,23 @@
 				<p>Lorem Ipsum is simply dummy text of the printing.</p>
 			</div>
 			<div id="product-index-list">
-				@for($a=0; $a<=2; $a++)
+				@foreach($Produk as $list)
 				<div class="bar">
 					<div id="spacing">
-						<a href="{{ route('frontend.product.view', ['slug'=>'slug-'.$a, 'subslug'=>'subslug-'.$a]) }}">
+						<a href="{{ route('frontend.product.view', ['slug'=>$list->category->slug, 'subslug'=>$list->slug]) }}">
 							<div id="show">
-								<div id="img" style="background-image: url('{{ asset('amadeo/images-base/lain/3cce7076-95d9-4928-a7eb-a3ce01100bb7_800x663.jpg') }}');"></div>
+								<div id="img" style="background-image: url('{{ asset('amadeo/images-base/lain/'.$list->img_produk) }}');"></div>
 							</div>
 						</a>
 						<div id="descrip">
-							<a href="{{ route('frontend.product.view', ['slug'=>'slug-'.$a, 'subslug'=>'subslug-'.$a]) }}">
-								<h3>Name Of Product</h3>
+							<a href="{{ route('frontend.product.view', ['slug'=>$list->category->slug, 'subslug'=>$list->slug]) }}">
+								<h3>{{ $list->nama }}</h3>
 							</a>
-							<p>Simple description of product on here...</p>
+							<p>{{ Illuminate\Support\Str::words($list->description, 15, "...") }}</p>
 						</div>
 					</div>	
 				</div>
-				@endfor
+				@endforeach
 				<div class="clearfix"></div>
 			</div>
 			<div class="text-center">

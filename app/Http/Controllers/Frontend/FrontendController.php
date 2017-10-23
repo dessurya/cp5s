@@ -8,11 +8,19 @@ use DB;
 use Mail;
 use Validator;
 
+use App\Models\CategoryProduk;
+use App\Models\Produk;
+use App\Models\Kontak;
+
 class FrontendController extends Controller
 {
     // home
 		function home() {
-		    return view('frontend.home-page.index');
+			$CategoryProduk	= CategoryProduk::where('flug_home', 'Y')->where('flug_publish', 'Y')->orderBy('nama', 'asc')->limit(2)->get();
+
+			$Produk	= Produk::where('flug_publish', 'Y')->orderBy('nama', 'desc')->limit(3)->get();
+
+		    return view('frontend.home-page.index', compact('CategoryProduk', 'Produk'));
 		}
 	// home
 
@@ -144,20 +152,35 @@ class FrontendController extends Controller
 
 	// product
 		function product() {
-		    return view('frontend.product-page.index');
+			$CategoryProduk	= CategoryProduk::where('flug_publish', 'Y')->orderBy('nama', 'desc')->get();
+
+		    return view('frontend.product-page.index', compact('CategoryProduk'));
 		}
 		function productIndex($slug) {
-			$slug = $slug;
+			$CategoryProduk	= CategoryProduk::where('slug', $slug)->where('flug_publish', 'Y')->first();
+
+			if(!$CategoryProduk){
+				return view('errors.404');
+			}
+
+			$Produk	= Produk::where('id_category', $CategoryProduk->id)->where('flug_publish', 'Y')->orderBy('nama', 'desc')->get();
 		    return view('frontend.product-page.index-list', compact(
-		    	'slug'
+		    	'CategoryProduk',
+		    	'Produk'
 		    ));
 		}
 		function productView($slug, $subslug) {
-			$slug = $slug;
-			$subslug = $subslug;
+			$CategoryProduk	= CategoryProduk::where('slug', $slug)->where('flug_publish', 'Y')->first();
+
+			$Produk	= Produk::where('slug', $subslug)->where('flug_publish', 'Y')->first();
+
+			if(!$CategoryProduk OR !$Produk){
+				return view('errors.404');
+			}
+			
 		    return view('frontend.product-page.index-view', compact(
-		    	'slug',
-		    	'subslug'
+		    	'CategoryProduk',
+		    	'Produk'
 		    ));
 		}
 	// product
@@ -217,15 +240,15 @@ class FrontendController extends Controller
 		          ->with('alert', 'alert-success');
 		    }
 
-		    // DB::transaction(function() use($request){
+		    DB::transaction(function() use($request){
 		        
-		    //     $save = new Kontak;
-		    //     $save->nama = $request->name;
-		    //     $save->email = $request->email;
-		    //     $save->telepon = $request->telpon;
-		    //     $save->subyek = $request->subject;
-		    //     $save->pesan = $request->pesan;
-		    //     $save->save();
+		        $save = new Kontak;
+		        $save->nama = $request->name;
+		        $save->email = $request->email;
+		        $save->telepon = $request->telpon;
+		        $save->subyek = $request->subject;
+		        $save->pesan = $request->pesan;
+		        $save->save();
 
 		    //     $getSendTo = General::first();
 
@@ -241,7 +264,7 @@ class FrontendController extends Controller
 		    //     } catch (\Exception $e) {
 		    //       // dd($e);
 		    //     }
-		    // });
+		    });
 
 			return redirect()
 				->route('frontend.contact')

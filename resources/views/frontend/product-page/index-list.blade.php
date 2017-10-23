@@ -1,7 +1,7 @@
 @extends('frontend._layouts.basic')
 
 @section('title')
-	<title>PT. Cahaya Panca Sukses Sentosa | {{ $slug }} Product</title>
+	<title>PT. Cahaya Panca Sukses Sentosa | {{ $CategoryProduk->nama }}</title>
 @endsection
 
 @section('meta')
@@ -23,32 +23,29 @@
 	<div id="product" class="after-banner">
 		<img id="top" src="{{ asset('amadeo/images-base/banner-b.png') }}">
 		<div id="set-wrapper">
-			<h1>{{ $slug }}</h1>
+			<h1>{{ $CategoryProduk->nama }}</h1>
 			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-			</p>
-			<p>
-				Lorem Ipsum is simply dummy text of the
+				{{ $CategoryProduk->description }}
 			</p>
 			
 			<div id="product-index-list">
-				@for($a=0; $a<=5; $a++)
+				@foreach($Produk as $list)
 				<div class="bar">
 					<div id="spacing">
-						<a href="{{ route('frontend.product.view', ['slug'=>$slug, 'subslug'=>'subslug-'.$a]) }}">
+						<a href="{{ route('frontend.product.view', ['slug'=>$list->category->slug, 'subslug'=>$list->slug]) }}">
 							<div id="show">
-								<div id="img" style="background-image: url('{{ asset('amadeo/images-base/lain/3cce7076-95d9-4928-a7eb-a3ce01100bb7_800x663.jpg') }}');"></div>
+								<div id="img" style="background-image: url('{{ asset('amadeo/images-base/lain/'.$list->img_produk) }}');"></div>
 							</div>
 						</a>
 						<div id="descrip">
-							<a href="{{ route('frontend.product.view', ['slug'=>$slug, 'subslug'=>'subslug-'.$a]) }}">
-								<h3>Name Of Product</h3>
+							<a href="{{ route('frontend.product.view', ['slug'=>$list->category->slug, 'subslug'=>$list->slug]) }}">
+								<h3>{{ $list->nama }}</h3>
 							</a>
-							<p>Simple description of product on here...</p>
+							<p>{{ Illuminate\Support\Str::words($list->description, 15, "...") }}</p>
 						</div>
 					</div>	
 				</div>
-				@endfor
+				@endforeach
 				<div class="clearfix"></div>
 			</div>
 		</div>

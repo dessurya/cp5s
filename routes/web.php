@@ -39,5 +39,14 @@
 			->name('frontend.contact.store');
 
 	// contact
-
 // frontend
+
+// backend
+	Route::prefix('admin')->group(function(){
+
+		Route::get('login', 'Auth\LoginController@showLoginForm')->name('loginForm');
+	    Route::post('login', 'Auth\LoginController@login')->name('login');
+	    Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+    
+	});
+// backend

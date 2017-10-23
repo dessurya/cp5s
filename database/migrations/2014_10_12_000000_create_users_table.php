@@ -13,11 +13,17 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('amd_users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('avatar')->default('user.png');
+            $table->integer('confirmed')->default(0)->unsigned();
+            $table->string('confirmation_code')->nullable();
+            $table->integer('login_count')->unsigned();
+            $table->string('api_token', 60)->nullable();
+            $table->string('status', 1)->default('Y');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -30,6 +36,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('amd_users');
     }
 }
